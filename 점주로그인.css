@@ -1,7 +1,7 @@
 /*---------------------------기본값 설정-----------------------------*/
 *{
   font-size: 16px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0px;
   padding: 0px;
   
@@ -19,11 +19,13 @@ a{
 }
 
 .wrap{
-  position: relative;
   width: 1280px;
   margin-top: 50px;
   margin: auto;
+  position: relative;
+
 }
+
 
 img{
   width: 50px;
@@ -36,23 +38,18 @@ span{
 /*--------------------------------헤더-----------------------------*/
 
 .header{
-  width: 1280px;
   background-color: #F4F4F4;
   padding: 10px 0px;
   border: 1px solid black;
-  position: fixed;
-<<<<<<<< HEAD:점주로그인.css
-========
+  border-bottom: none;
   top: 0px;
-  
->>>>>>>> origin/이태형:productView.css
+  width: 1277px;
 }
 
 .header1{
   display: flex;
   justify-content: space-between;
   background-color: white;
-  
 }
 
 .title{
@@ -62,47 +59,47 @@ span{
 
 .header-left{
   padding-left: 70px;
-  padding-top: 5px;
 }
-
 
 .haeder-right{
   padding-right: 70px;
   padding-top: 5px;
 }
-
-
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
  height: 100vh;               /*높이 알아서*/
  border: 1px solid black;
- margin-top: 81px;
- width: 1280px;
+}
+.box1 > h3{
+  text-align: center;
+  padding-top: 140px; padding-bottom: 80px;
+  font-size: 30px;
+
 }
 
 .main-center{
   width: 90%;
   background-color: white;
-  margin: 200px auto;
+  margin: 20px auto;
   height: 90%;           
   border-radius: 15px;
+  text-align: center;
+}
+.ListIdBox, .ListPwdBox{
   display: flex;
   justify-content: center;
-  
+  margin: 20px; 
 }
-th {
-  
-  font-size: 20px;
-  padding: 10px 50px;
+.box1 >button{
+  padding: 10px;
 }
-
-td{
-  text-align: center;
-  padding-top: 30px;
+.box1 > ul{
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+ 
 }
-
-
 /*---------------------------------푸터-----------------------------*/
 
 .footer{
@@ -110,14 +107,10 @@ td{
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-<<<<<<<< HEAD:점주로그인.css
   border: 1px solid black;
-  position: fixed;
-========
-  padding-top: 180px;
-  height: 300px;
->>>>>>>> origin/이태형:productView.css
+  width: 1257px;
 }
+
 
 .footer-left > ul {
   text-align: right;
