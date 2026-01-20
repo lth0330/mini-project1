@@ -17,6 +17,9 @@ function Listreg(){
 
 }
 
+
+
+
 /*
 function Listcheck(){
     const url=new URLSearchParams(location.search);
