@@ -1,7 +1,7 @@
 /*---------------------------기본값 설정-----------------------------*/
 *{
   font-size: 16px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   
@@ -19,6 +19,7 @@ a{
 }
 
 .wrap{
+  position: relative;
   width: 1280px;
   margin-top: 50px;
   margin: auto;
@@ -35,15 +36,16 @@ span{
 /*--------------------------------헤더-----------------------------*/
 
 .header{
-  margin-top: 50px;
+  width: 1280px;
   background-color: #F4F4F4;
   padding: 10px 0px;
   border: 1px solid black;
+  position: fixed;
+  top: 0px;
   
 }
 
 .header1{
-  
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -56,18 +58,33 @@ span{
 }
 
 .header-left{
-  padding-left: 70px;
+  padding-left: 0px;
 }
 
+.header-left > div{
+  display: flex;
+}
 .haeder-right{
   padding-right: 70px;
   padding-top: 5px;
 }
+.back {
+  font-size: 40px;
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 10px;
+ 
+  border: 0px;
+}
+
+
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
- height: 500px;               /*높이 알아서*/
+ height: 100vh;               /*높이 알아서*/
  border: 1px solid black;
+ margin-top: 81px;
+ width: 1280px;
 }
 
 .main-center{
@@ -76,6 +93,33 @@ span{
   margin: 20px auto;
   height: 90%;           
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  
+}
+th {
+  
+  font-size: 20px;
+  padding: 10px 50px;
+}
+
+td{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.remove{
+  color: red;
+  background-color: white;
+  border: 0px;
+  padding-left: 30px;
+}
+
+.update{
+  color: blue;
+  background-color: white;
+  border: 0px;
+  padding-left: 20px;
 }
 /*---------------------------------푸터-----------------------------*/
 
@@ -84,7 +128,10 @@ span{
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-  border: 1px solid black;
+  padding-top: 180px;
+  height: 300px;
+  
+  
   
 }
 
