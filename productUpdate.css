@@ -41,11 +41,8 @@ span{
   padding: 10px 0px;
   border: 1px solid black;
   position: fixed;
-<<<<<<<< HEAD:점주로그인.css
-========
   top: 0px;
   
->>>>>>>> origin/이태형:productView.css
 }
 
 .header1{
@@ -61,14 +58,23 @@ span{
 }
 
 .header-left{
-  padding-left: 70px;
-  padding-top: 5px;
+  padding-left: 0px;
 }
 
-
+.header-left > div{
+  display: flex;
+}
 .haeder-right{
   padding-right: 70px;
   padding-top: 5px;
+}
+.back {
+  font-size: 40px;
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 10px;
+ 
+  border: 0px;
 }
 
 
@@ -84,7 +90,7 @@ span{
 .main-center{
   width: 90%;
   background-color: white;
-  margin: 200px auto;
+  margin: 20px auto;
   height: 90%;           
   border-radius: 15px;
   display: flex;
@@ -99,10 +105,22 @@ th {
 
 td{
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
+.remove{
+  color: red;
+  background-color: white;
+  border: 0px;
+  padding-left: 30px;
+}
 
+.update{
+  color: blue;
+  background-color: white;
+  border: 0px;
+  padding-left: 20px;
+}
 /*---------------------------------푸터-----------------------------*/
 
 .footer{
@@ -110,13 +128,8 @@ td{
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-<<<<<<<< HEAD:점주로그인.css
-  border: 1px solid black;
-  position: fixed;
-========
   padding-top: 180px;
   height: 300px;
->>>>>>>> origin/이태형:productView.css
 }
 
 .footer-left > ul {
@@ -128,6 +141,5 @@ td{
 .footer-right > ul {
   text-align: left;
   padding-left: 50px;
-  
 }
 
