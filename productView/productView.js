@@ -87,8 +87,14 @@ function productViewPrint() { //출력 함수
         }
     }
     productArea.innerHTML = html;
+    
 } //출력 함수 end
 
+
+/*function menu(){            //메뉴 클릭
+  let hide = document.querySelector(".hide");
+  hide.classList.toggle("hide-none")
+}*/
 //loginAdd(); 로그인 객체 생성
 // function loginAdd(){
 //     let loginInfo = sessionStorage.getItem('loginInfo');
