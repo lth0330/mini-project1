@@ -23,9 +23,7 @@ a{
   margin-top: 50px;
   margin: auto;
   position: relative;
-
 }
-
 
 img{
   width: 50px;
@@ -36,20 +34,29 @@ span{
   font-size: 12px;
 }
 /*--------------------------------헤더-----------------------------*/
-
 .header{
   background-color: #F4F4F4;
   padding: 10px 0px;
   border: 1px solid black;
-  border-bottom: none;
-  top: 0px;
-  width: 1277px;
+  border-bottom: none;  border-top: none;
+  width: 0 auto;
+ 
 }
 
 .header1{
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: center; /* 흰 박스 가로중앙 */
+  align-items: center;   
+
+}
+.headerWhite{ /*가로 흰 박스 내부 가운데 정렬*/
+  width: 1140px; height: 60px;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 100px;
   display: flex;
   justify-content: space-between;
-  background-color: white;
 }
 
 .title{
@@ -61,24 +68,25 @@ span{
   padding-left: 70px;
 }
 
-.haeder-right{
+.header-right{ /*상단 우측 메뉴탭 여백*/
   padding-right: 70px;
   padding-top: 5px;
 }
 /*---------------------------------메인-----------------------------*/
-.main{
+.main{ 
  background-color: #F4F4F4;
- height: 100vh;               /*높이 알아서*/
- border: 1px solid black;
+ height: 80vh;               /*높이 알아서*/
+ border-left: 1px solid black; 
+ border-right: 1px solid black;
 }
+
 .box1 > h3{
   text-align: center;
   padding-top: 140px; padding-bottom: 80px;
   font-size: 30px;
-
 }
 
-.main-center{
+.main-center{ /*흰 박스*/
   width: 90%;
   background-color: white;
   margin: 20px auto;
@@ -86,31 +94,32 @@ span{
   border-radius: 15px;
   text-align: center;
 }
-.ListIdBox, .ListPwdBox{
-  display: flex;
-  justify-content: center;
-  margin: 20px; 
+.ListIdBox, .ListPwdBox{ /* 아이디 비밀번호 칸 */
+  display: grid;
+  grid-template-columns: 120px 250px auto;
+  align-items: center;
+  gap: 10px;
+  margin-left: 330px;
+  margin-bottom: 30px;
 }
-.box1 >button{
+ .box1 >button{ /* 로그인버튼 */
   padding: 10px;
 }
-.box1 > ul{
+.box1 > ul{ /* 하단 찾기버튼*/
   display: flex;
   justify-content: center;
   padding: 70px;
- 
 }
 /*---------------------------------푸터-----------------------------*/
-
 .footer{
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 12px;
   border: 1px solid black;
-  width: 1257px;
+  border-top: none;
+  width: 0 auto;
 }
-
 
 .footer-left > ul {
   text-align: right;

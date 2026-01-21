@@ -33,22 +33,30 @@ span{
   font-size: 12px;
 }
 /*--------------------------------헤더-----------------------------*/
-
 .header{
-  margin-top: 50px;
   background-color: #F4F4F4;
   padding: 10px 0px;
   border: 1px solid black;
-  position: fixed;
+  border-bottom: none;
+  width:0 auto;
 }
 
 .header1{
-  
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: center; /* 흰 박스 가로중앙 */
+  align-items: center;   
+
+}
+.headerWhite{ /*가로 흰 박스 내부 가운데 정렬*/
+  width: 1140px; height: 60px;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 100px;
   display: flex;
   justify-content: space-between;
-  background-color: white;
-  
 }
+
 
 .title{
   font-size: 30px;
@@ -59,7 +67,7 @@ span{
   padding-left: 70px;
 }
 
-.haeder-right{
+.header-right{ /*상단 우측 메뉴탭 여백*/
   padding-right: 70px;
   padding-top: 5px;
 }
@@ -73,10 +81,21 @@ span{
 .main-center{
   width: 90%;
   background-color: white;
-  margin: 200px auto;
+  margin: 100px auto;
   height: 90%;           
   border-radius: 15px;
 }
+.box1 > div {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 120px 250px auto;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ListRegBtn{ margin-left: 550px; }
+
 /*---------------------------------푸터-----------------------------*/
 
 .footer{
@@ -86,6 +105,8 @@ span{
   font-size: 12px;
   border: 1px solid black;
   position: fixed;
+  left:0;
+  right:0;
 }
 
 .footer-left > ul {
