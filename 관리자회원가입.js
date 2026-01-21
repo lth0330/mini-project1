@@ -17,25 +17,23 @@ function Listreg(){
 
 }
 
-
-
-
-/*
-function Listcheck(){
-    const url=new URLSearchParams(location.search);
-    const selectNo=url.get("Listno");
-    
+function Listcheck(){  // 260121 이연지 수정
+    const inputId=document.querySelector(".Listid").value;
 
     let Listmember=localStorage.getItem("Listmember");
-    if(Listmember==null){Listmember=[];}
-    else{Listmember=JSON.parse(Listmember);}
+    Listmember=Listmember?JSON.parse(Listmember):[];
 
-    for(let i=0; i<Listmember.length; i++){
-        const obj=Listmember[i];
-        if(obj.Listno==selectNo){
-            const confirm=alert("사용 가능한 아이디")
+    let Listidcheck=false;
+    for(let i=0; i<Listmember.length; i++) {
+        if(Listmember[i].Listid==inputId) {
+            Listidcheck=true; 
+            break;
         }
-        else{alert("사용 불가능한 아이디")}
+    }
+
+    if(Listidcheck==true){
+        alert("사용 불가능한 아이디입니다.");
+    } else{
+        alert("사용 가능한 아이디입니다.");
     }
 }
-    */

@@ -11,9 +11,10 @@ function ListLogin(){
     for(let index=0; index<=Listmember.length-1;index++){
         const memberlist=Listmember[index];
         if(memberlist.Listid==Listid&&memberlist.Listpw==Listpw){
-            alert("로그인 성공"); return;
+            alert("로그인 성공");
+            location.href="productView.html" // 260121 이연지 추가
+            return;
         }
     }
     alert("로그인 실패");
-    // location.href=`제품등록정보.html?no=${selectNo}`
 }
