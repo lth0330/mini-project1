@@ -80,6 +80,67 @@ span{
  width: 1280px;
 }
 
+.main-top{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+
+.main-top-left > div > img{
+  width: 30px;
+  padding: 17px 0px;
+  padding-left: 10px;
+  
+}
+
+.main-top-left > div{
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+}
+
+
+.main-top-left > div > div>input{
+  font-size: 20px;
+  width: 180px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0px;
+;
+}
+
+
+
+.main-top-right{
+  display: flex;
+  padding-right: 50px;
+  margin-left: 50px;
+  border-radius: 20px;
+  background-color: white;
+  align-items: center;
+}
+
+
+.검색{
+  font-size: 20px;
+   padding: 10px;
+   border: 0px;
+   width: 400px;
+   text-align: center;
+   
+}
+
+.main-top-right > div > select{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 0px;
+  text-align: center;
+  
+}
+
+
 .main-center{
   width: 90%;
   background-color: white;
