@@ -41,11 +41,10 @@ span{
   padding: 10px 0px;
   border: 1px solid black;
   position: fixed;
-<<<<<<<< HEAD:점주로그인.css
-========
+
   top: 0px;
   
->>>>>>>> origin/이태형:productView.css
+
 }
 
 .header1{
@@ -75,7 +74,7 @@ span{
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
- height: 100vh;               /*높이 알아서*/
+ height: 100vh;             
  border: 1px solid black;
  margin-top: 81px;
  width: 1280px;
@@ -84,7 +83,7 @@ span{
 .main-center{
   width: 90%;
   background-color: white;
-  margin: 200px auto;
+  margin: 20px auto;
   height: 90%;           
   border-radius: 15px;
   display: flex;
@@ -110,13 +109,10 @@ td{
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-<<<<<<<< HEAD:점주로그인.css
-  border: 1px solid black;
-  position: fixed;
-========
+
   padding-top: 180px;
   height: 300px;
->>>>>>>> origin/이태형:productView.css
+
 }
 
 .footer-left > ul {
