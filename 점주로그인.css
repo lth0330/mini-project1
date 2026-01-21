@@ -36,10 +36,9 @@ span{
 /*--------------------------------헤더-----------------------------*/
 .header{
   background-color: #F4F4F4;
-  padding: 10px 0px;
-  border: 1px solid black;
-  border-bottom: none;  border-top: none;
-  width: 0 auto;
+  padding: 0px;
+  border-left: 1px solid black; border-right: 1px solid black;
+  width: 100%;
  
 }
 
@@ -53,7 +52,7 @@ span{
 .headerWhite{ /*가로 흰 박스 내부 가운데 정렬*/
   width: 1140px; height: 60px;
   background-color: white;
-  margin: 10px 0px;
+  /*margin: 10px 0px;*/
   border-radius: 100px;
   display: flex;
   justify-content: space-between;
@@ -78,6 +77,7 @@ span{
  height: 80vh;               /*높이 알아서*/
  border-left: 1px solid black; 
  border-right: 1px solid black;
+ padding-top: 50px;
 }
 
 .box1 > h3{
@@ -86,14 +86,15 @@ span{
   font-size: 30px;
 }
 
-.main-center{ /*흰 박스*/
-  width: 90%;
+ .main-center{ width: 90%;
   background-color: white;
-  margin: 20px auto;
+  text-align: center;
+  margin: 0px auto;
   height: 90%;           
   border-radius: 15px;
-  text-align: center;
-}
+ }
+  
+
 .ListIdBox, .ListPwdBox{ /* 아이디 비밀번호 칸 */
   display: grid;
   grid-template-columns: 120px 250px auto;

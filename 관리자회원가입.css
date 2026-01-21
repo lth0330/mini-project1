@@ -74,27 +74,34 @@ span{
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
- height: 500px;               /*높이 알아서*/
+ height: 1000px;             /*높이 알아서*/
  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-center{
+.main-center{ /*흰 박스*/
   width: 90%;
   background-color: white;
-  margin: 100px auto;
+  margin: 50px auto;
   height: 90%;           
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
 }
-.box1 > div {
+.box1 > div { /* id~ 편의점tel */
   width: 500px;
   display: grid;
   grid-template-columns: 120px 250px auto;
-  align-items: center;
   gap: 10px;
   margin-bottom: 10px;
 }
+.box1 > button{ 
+  font-size: 20px;
+  padding: 10px; }
 
-.ListRegBtn{ margin-left: 550px; }
 
 /*---------------------------------푸터-----------------------------*/
 
@@ -104,15 +111,11 @@ span{
   padding: 20px;
   font-size: 12px;
   border: 1px solid black;
-  position: fixed;
-  left:0;
-  right:0;
 }
 
 .footer-left > ul {
   text-align: right;
   padding-right: 50px;
-  
 }
 
 .footer-right > ul {
