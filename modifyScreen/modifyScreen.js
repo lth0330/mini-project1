@@ -47,7 +47,8 @@ function boardmodify(){ //수정화면 수정 함수 버튼 클릭시
 
             localStorage.setItem('productList', JSON.stringify(productList) );
             alert('수정 완료');
-            location.href=`productUpdate.html`; //update 화면으로 이동
+            location.href=`../productUpdate/productUpdate.html`; //update 화면으로 이동
         }
     }
 }
+//html, css만 넘겨받으면 끝! -> productWriter만 되면 바로 테스트 가능

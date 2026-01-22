@@ -1,7 +1,7 @@
 /*---------------------------기본값 설정-----------------------------*/
 *{
   font-size: 16px;
-  box-sizing: content-box;
+  box-sizing:border-box;
   margin: 0px;
   padding: 0px;
   
@@ -22,7 +22,6 @@ a{
   width: 1280px;
   margin-top: 50px;
   margin: auto;
-  position: relative;
 }
 
 img{
@@ -34,28 +33,18 @@ span{
   font-size: 12px;
 }
 /*--------------------------------헤더-----------------------------*/
+
 .header{
   background-color: #F4F4F4;
-  padding: 0px;
-  border-left: 1px solid black; border-right: 1px solid black;
-  width: 100%;
- 
+  padding: 10px 0px;
+  border-left:  1px solid gray;
+  border-right:  1px solid gray;
 }
 
 .header1{
-  background-color: #F4F4F4;
-  display: flex;
-  justify-content: center; /* 흰 박스 가로중앙 */
-  align-items: center;   
-
-}
-.headerWhite{ /*가로 흰 박스 내부 가운데 정렬*/
-  width: 1140px; height: 60px;
-  background-color: white;
-  /*margin: 10px 0px;*/
-  border-radius: 100px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .title{
@@ -67,56 +56,32 @@ span{
   padding-left: 70px;
 }
 
-.header-right{ /*상단 우측 메뉴탭 여백*/
+.haeder-right{
   padding-right: 70px;
   padding-top: 5px;
 }
 /*---------------------------------메인-----------------------------*/
-.main{ 
+.main{
  background-color: #F4F4F4;
- height: 80vh;               /*높이 알아서*/
- border-left: 1px solid black; 
- border-right: 1px solid black;
- padding-top: 50px;
+ height: 100vh;               /*높이 알아서*/
+ border: 1px solid gray;
 }
 
-.main-center > {
-  text-align: center;
-  padding-top: 140px; padding-bottom: 80px;
-  font-size: 30px;
-}
-
- .main-center{ width: 90%;
+.main-center{
+  width: 90%;
   background-color: white;
-  text-align: center;
-  margin: 0px auto;
+  margin: 20px auto;
   height: 90%;           
   border-radius: 15px;
- }
-  
-.main-center> div{ /* 아이디 비밀번호 칸 */
-  display: grid;
-  grid-template-columns: 120px 250px auto;
-  align-items: center;
-  gap: 10px;
-  margin-left: 330px;
-  margin-bottom: 30px;
-}
- .box1 >button{ /* 로그인버튼 */
-  padding: 10px;
-}
-.ListAdmBtn { /*등록버튼*/
- 
 }
 /*---------------------------------푸터-----------------------------*/
+
 .footer{
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-  border: 1px solid black;
-  border-top: none;
-  width: 0 auto;
+  
 }
 
 .footer-left > ul {
@@ -128,5 +93,5 @@ span{
 .footer-right > ul {
   text-align: left;
   padding-left: 50px;
-  
 }
+
