@@ -39,22 +39,27 @@ span{
   border: 1px solid black;
   border-bottom: none;
   width:0 auto;
+  border-top: none;
+  border-bottom: none;
+
 }
 
 .header1{
   background-color: #F4F4F4;
   display: flex;
-  justify-content: center; /* 흰 박스 가로중앙 */
+  justify-content: center; 
   align-items: center;   
-
+  
 }
-.headerWhite{ /*가로 흰 박스 내부 가운데 정렬*/
+.headerWhite{ 
   width: 1140px; height: 60px;
   background-color: white;
   margin: 10px 0px;
-  border-radius: 100px;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
+  
+
 }
 
 
@@ -74,10 +79,11 @@ span{
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
- height: 1000px;             /*높이 알아서*/
+ height: 600px;             /*높이 알아서*/
  border: 1px solid black;
   display: flex;
   flex-direction: column;
+  border-top: none;
 }
 
 .main-center{ /*흰 박스*/
@@ -86,10 +92,10 @@ span{
   margin: 50px auto;
   height: 90%;           
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
+  display: flex; /* flex-column 삭제*/
   justify-content: center;
-  padding-left: 50px;
+  align-items: center; /*0122 수정 - 가로가운데*/
+  /*0122 수정 - padding-left 제거*/
 }
 .box1 > div { /* id~ 편의점tel */
   width: 500px;
@@ -98,19 +104,23 @@ span{
   gap: 10px;
   margin-bottom: 10px;
 }
+
 .box1 > button{ 
   font-size: 20px;
-  padding: 10px; }
+  padding: 10px;
+  margin-left: 200px; /* 0122 수정 버튼 가운데로*/
+}
 
 
 /*---------------------------------푸터-----------------------------*/
-
 .footer{
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 12px;
   border: 1px solid black;
+  border-top: none;
+  width: 0 auto;
 }
 
 .footer-left > ul {
@@ -121,5 +131,5 @@ span{
 .footer-right > ul {
   text-align: left;
   padding-left: 50px;
+  
 }
-
