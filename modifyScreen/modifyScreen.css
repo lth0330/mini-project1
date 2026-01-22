@@ -1,0 +1,192 @@
+/*---------------------------기본값 설정-----------------------------*/
+*{
+  font-size: 16px;
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+li{
+  list-style-type : none;
+  font-size: 12px;
+}
+
+a{ 
+  text-decoration: none; 
+  color: black;
+  font-size: 12px;
+}
+
+.wrap{
+  width: 1280px;
+  margin-top: 50px;
+  margin: auto;
+}
+
+img{
+  width: 50px;
+}
+
+span{
+  padding: 0px 10px;
+  font-size: 12px;
+}
+/*--------------------------------헤더-----------------------------*/
+
+.header{
+  background-color: #F4F4F4;
+  padding: 10px 70px;
+  border-left:  1px solid gray;
+  border-right:  1px solid gray;
+}
+
+.header1{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.title{
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+.header-left{
+  padding-left: 30px;
+}
+
+.haeder-right{
+  padding-right: 30px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.haeder-right > button {
+  background-color: white;
+  border: 0px;
+  cursor: pointer
+}
+
+.hide::before{
+  display: block;
+  position: absolute;
+  background-position-x :-203px;
+  background-position-y :-301px;
+  background-size :468px 457px;
+  content:"";
+  background-image: url("./icon.png");
+  top: -13px;
+  width: 23px;
+  height: 13px;
+  box-shadow: 0;
+}
+.hide{
+  display: none;
+  width: 160px;
+  position: absolute;
+  background-color: white;
+  padding : 25px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 20px;
+}
+.hide-none{
+  display: block;
+}
+.hide > a > li{
+  font-size: 20px;
+  padding: 5px 0px;
+}
+/*---------------------------------메인-----------------------------*/
+.main{
+ background-color: #F4F4F4;
+ height: 100vh;               /*높이 알아서*/
+ border: 1px solid gray;
+ border-top: 0px;
+}
+
+.main-center{
+  width: 90%;
+  background-color: white;
+  margin: 0px auto;
+  height: 90%;           
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+}
+
+
+
+.line{
+  display: flex;
+  justify-content:space-evenly;
+ 
+}
+.line > div{
+  padding: 30px;
+  
+}
+
+.line > div > input{
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  
+  border: 1px solid gray;
+}
+
+.line >div > select{
+  font-size: 25px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.Adminimg{
+  width: 350px;
+}
+
+p{
+  font-size: 20px;
+}
+.등록{
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  
+  margin-right: 60px;
+  cursor: pointer;
+}
+.main-bottom {
+  text-align: end;
+
+} 
+
+/*-----------------------------푸터-----------------------------*/
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  font-size: 12px;
+}
+
+.footer-left > ul {
+  text-align: right;
+  padding-right: 50px;
+  
+}
+
+.footer-right > ul {
+  text-align: left;
+  padding-left: 50px;
+}
+
