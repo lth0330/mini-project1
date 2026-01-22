@@ -18,7 +18,7 @@ function Adminreg(){
     const AdmindisdayDom=document.querySelector(".Admindisday");
     const Admindisday=AdmindisdayDom.value;
     
-    const image = Adminimg.files[0];
+    const image = AdminimgDom.files[0];
 
     if(image){
         imgUrl = URL.createObjectURL(image);
@@ -37,7 +37,7 @@ function Adminreg(){
     else { loginInfo = JSON.parse(loginInfo) }
     
     // 고유 번호 생성
-    let pNo=productList.length>=1? productList[productList.length-1].productListNo+1:1;
+    let pNo=productList.length >= 1 ? productList[productList.length-1].pNo+1:1;
     
     // 입력 받은 정보로 (new) 배열 만들기 -> 수정된 객체에 맞춰서(0122)
     let obj={
