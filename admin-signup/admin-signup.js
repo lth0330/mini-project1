@@ -61,7 +61,7 @@ function Listreg(){
     }
 
     // 고유 번호 생성
-    let ListadminNo=AdminInfo.length>=1? AdminInfo[AdminInfo.length-1].ListadminNo+1:1;
+    let ListadminNo = AdminInfo.length >= 1 ? AdminInfo[AdminInfo.length-1].adminNo+1 : 1;
     
     // 입력 받은 정보로 (new) 배열 만들기
     let obj={
