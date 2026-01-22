@@ -113,15 +113,70 @@ span{
   margin: 0px auto;
   height: 90%;           
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
 }
-/*---------------------------------푸터-----------------------------*/
+
+
+
+.line{
+  display: flex;
+  justify-content:space-evenly;
+ 
+}
+.line > div{
+  padding: 30px;
+  
+}
+
+.line > div > input{
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  
+  border: 1px solid gray;
+}
+
+.line >div > select{
+  font-size: 25px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.Adminimg{
+  width: 350px;
+}
+
+p{
+  font-size: 20px;
+}
+.등록{
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  
+  margin-right: 60px;
+  cursor: pointer;
+}
+.main-bottom {
+  text-align: end;
+
+} 
+
+/*-----------------------------푸터-----------------------------*/
 
 .footer{
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 80px;
   font-size: 12px;
-  
 }
 
 .footer-left > ul {
