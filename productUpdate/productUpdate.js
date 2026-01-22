@@ -62,7 +62,7 @@ function productModify(pNo) { //본인 제품만 보는 화면에서 수정버�
 
     for (let index = 0; index <= productList.length - 1; index++) {
         if (pNo == productList[index].pNo) { //제품번호가 일치하면 수정화면으로 이동
-            location.href = `modifyScreen.html?no=${pNo}`;
+            location.href = `../modifyScreen/modifyScreen.html?no=${pNo}`;
             break;
         }
     }
