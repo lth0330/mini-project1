@@ -66,7 +66,7 @@ function productViewPrint() { //출력 함수
                 if (category.value == product.pType) { // 카테고리와 일치하는 것만 출력
                     html += `
                 <tr>
-                  <td>${locate}}</td><td>${product.pName}</td>
+                  <td>${locate}</td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -90,11 +90,11 @@ function productViewPrint() { //출력 함수
     
 } //출력 함수 end
 
-
-/*function menu(){            //메뉴 클릭
+function menu(){            //메뉴 클릭
   let hide = document.querySelector(".hide");
   hide.classList.toggle("hide-none")
-}*/
+}
+
 //loginAdd(); 로그인 객체 생성
 // function loginAdd(){
 //     let loginInfo = sessionStorage.getItem('loginInfo');

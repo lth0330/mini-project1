@@ -13,7 +13,7 @@ function Adminreg(){
     const Adminstock=AdminstockDom.value;
     const AdmindisdayDom=document.querySelector(".Admindisday");
     const Admindisday=AdmindisdayDom.value;
-    //추가해야함! -> 카테고리, 할인된 가격, 이미지 넣는 곳
+    //추가해야함! -> 카테고리, 이미지 넣는 곳
 
     // localStorage에서 전체 제품 정보 가져오기
     let productList=localStorage.getItem("productList");
@@ -38,7 +38,7 @@ function Adminreg(){
         pName : Adminproduct,
         pType : "과자", //추가해야함 -> 카테고리 select(0122)
         price : Adminprice,
-        disprice : 1500, // 추가해야함 -> 할인된 가격(0122)
+        disprice : Admindiscount,
         img : "https://plcaehold.co/100x100"//추가해야함 -> 이미지 넣는 곳(0122)
     };
     console.log(obj);
