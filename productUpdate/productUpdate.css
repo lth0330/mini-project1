@@ -33,6 +33,44 @@ span{
   padding: 0px 10px;
   font-size: 12px;
 }
+
+.header-right > button {
+  background-color: white;
+  border: 0px;
+  cursor: pointer
+}
+
+.hide::before{
+  display: block;
+  position: absolute;
+  background-position-x :-203px;
+  background-position-y :-301px;
+  background-size :468px 457px;
+  content:"";
+  background-image: url("./icon.png");
+  top: -13px;
+  width: 23px;
+  height: 13px;
+  box-shadow: 0;
+}
+.hide{
+  display: none;
+  width: 160px;
+  position: absolute;
+  background-color: white;
+  padding : 25px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 20px;
+}
+.hide-none{
+  display: block;
+}
+.hide > a > li{
+  font-size: 20px;
+  padding: 5px 0px;
+}
+
 /*--------------------------------헤더-----------------------------*/
 
 .header{
