@@ -8,41 +8,41 @@
  <link rel="stylesheet" href="productWriter.css">
 </head>
 <body>
-  
   <div class="wrap">
     <div class="header">
       <div class="header1">
         <div class="header-left">
-          <img src="./productView/logo.png"/>
+          <img src="/productView/logo.png"/>
         </div>
         <div class="header-center">
           <h3 class="title"> 편의점 할인 정보 및 재고 관리</h3>
         </div>
         <div class="header-right">
-          <a href="#"><img src="./productView/menu.png"></a>
+          <a href="#"><img src="/productView/menu.png"></a>
         </div>
-      </div><!--header1 end-->
-    </div><!--header end-->
+      </div>
+    </div>
     <div class="main">
       <div class="main-center">
-        <div class="leftMain"><!--0122 leftMain 생성-->
-        <div><p> 제품명 </p> <input class="Adminproduct"></div><!--0122 div 설정-->
-        <div><p> 이벤트 종류 </p><!--0122 div 설정-->
+       <input type="file" class="Adminimg">
+        <div><p> 제품명 </p> <input class="Adminproduct"></div>
+        <div><p> 카테고리 </p>
+        <select class="Admincategory">
+          <option> 과자 </option>
+          <option> 음료수 </option>
+        </select></div>
+        <div><p> 이벤트 종류 </p>
         <select class="Adminevent">
             <option> 1+1 </option>
             <option> 500원 할인 </option>
             <option> 1000원 할인 </option>
         </select></div>
-        </div><!-- leftMain end-->
-         <div class="rightMain"><!--0122 rightMain 생성--> 
-        <div><p> 가격 </p> <input class="Adminprice"></div><!--0122 div 설정-->
-        <div><p> 할인 후 가격 </p> <input class="Admindiscount"></div><!--0122 div 설정-->
-        <div><p> 재고 </p> <input class="Adminstock"></div><!--0122 div 설정-->
-        <div><p> 할인 기간 </p> <input class="Admindisday"></div><!--0122 div 설정-->
-        
-        <button class=ListAdmBtn onclick="Adminreg()"> 등록 </button><!--버튼에 class명 추가-->
-      </div>
-      </div>
+        <div><p> 가격 </p> <input class="Adminprice"></div>
+        <div><p> 할인 후 가격 </p> <input class="Admindiscount"></div>
+        <div><p> 재고 </p> <input class="Adminstock"></div>
+        <div><p> 할인 기간 </p> <input class="Admindisday"></div>
+        <button onclick="Adminreg()"> 등록 </button>
+        </div>
     </div>
     <div class="footer">
       <div class="footer-left">
