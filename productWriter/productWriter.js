@@ -17,7 +17,14 @@ function Adminreg(){
     const Adminstock=AdminstockDom.value;
     const AdmindisdayDom=document.querySelector(".Admindisday");
     const Admindisday=AdmindisdayDom.value;
-    //추가해야함! -> 카테고리, 이미지 넣는 곳
+    
+    const image = Adminimg.files[0];
+
+    if(image){
+        imgUrl = URL.createObjectURL(image);
+    }
+
+    let imgUrl = "https://plcaehold.co/100x100";
 
     // localStorage에서 전체 제품 정보 가져오기
     let productList=localStorage.getItem("productList");
@@ -43,7 +50,7 @@ function Adminreg(){
         pType : Admincategory, 
         price : Adminprice, // 260122 수정
         disprice : Admindiscount, 
-        img : "https://plcaehold.co/100x100"//추가해야함 -> 이미지 넣는 곳(0122)
+        img : imgUrl
     };
     console.log(obj);
     productList.push(obj); alert("등록 성공");
