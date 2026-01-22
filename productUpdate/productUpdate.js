@@ -2,7 +2,7 @@
 productUpdatePrint();
 
 function productUpdatePrint() {
-    const updatearea = document.querySelector('.tbody'); //추후에 추가, HTML 넣을 장소 update-tbody로 바꾸기
+    const updatearea = document.querySelector('.update-tbody'); //추후에 추가, HTML 넣을 장소 update-tbody로 바꾸기
 
     let productList = localStorage.getItem('productList');
     if (productList == null) { productList = []; }
