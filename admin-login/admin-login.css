@@ -38,7 +38,7 @@ span{
   background-color: #F4F4F4;
   padding: 0px;
   border-left: 1px solid black; border-right: 1px solid black;
-  width: 100%;
+  /*0122 width 삭제*/
  
 }
 
@@ -46,14 +46,15 @@ span{
   background-color: #F4F4F4;
   display: flex;
   justify-content: center; /* 흰 박스 가로중앙 */
-  align-items: center;   
+  align-items: center; 
+  padding-top: 25px;  
 
 }
 .headerWhite{ /*가로 흰 박스 내부 가운데 정렬*/
   width: 1140px; height: 60px;
   background-color: white;
   /*margin: 10px 0px;*/
-  border-radius: 100px;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -74,10 +75,10 @@ span{
 /*---------------------------------메인-----------------------------*/
 .main{ 
  background-color: #F4F4F4;
- height: 80vh;               /*높이 알아서*/
+ height: 600px;               /*높이 알아서*/
  border-left: 1px solid black; 
  border-right: 1px solid black;
- padding-top: 50px;
+ padding-top: 25px;
 }
 
 .box1 > h3{
@@ -125,7 +126,6 @@ span{
 .footer-left > ul {
   text-align: right;
   padding-right: 50px;
-  
 }
 
 .footer-right > ul {
