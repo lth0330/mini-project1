@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='점주로그인.css'>
-    
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+ <link rel="stylesheet" href="productWriter.css">
 </head>
 <body>
-    <div class="wrap">
+  
+  <div class="wrap">
     <div class="header">
       <div class="header1">
         <div class="header-left">
@@ -18,27 +18,25 @@
         <div class="header-center">
           <h3 class="title"> 편의점 할인 정보 및 재고 관리</h3>
         </div>
-        <div class="header-right">
+        <div class="haeder-right">
           <a href="#"><img src="./img/menu.png"></a>
         </div>
       </div>
     </div>
     <div class="main">
       <div class="main-center">
-          <div class="box1">            
-              <h3>점주 로그인</h3>
-              <div class="ListIdBox">
-                <p>아이디</p><input class="Listid"><br /></div>
-              <div class="ListPwdBox">
-                <p>비밀번호</p><input type=password class="Listpw"><br />
-            </div>
-            <button onclick="ListLogin()">로그인</button>
-            <ul>
-                <li>아이디찾기 <span>|</span></li>
-                <li>비밀번호찾기<span>|</span></li>
-                <li><a href="관리자회원가입.html">점주회원가입</a></li>
-            </ul>
-          </div>
+        <p> 제품명 </p> <input class="Adminproduct">
+        <p> 이벤트 종류 </p>
+        <select class="Adminevent">
+            <option> 1+1 </option>
+            <option> 500원 할인 </option>
+            <option> 1000원 할인 </option>
+        </select>
+        <p> 가격 </p> <input class="Adminprice">
+        <p> 할인 후 가격 </p> <input class="Admindiscount">
+        <p> 재고 </p> <input class="Adminstock">
+        <p> 할인 기간 </p> <input class="Admindisday">
+        <button onclick="Adminreg()"> 등록 </button>
       </div>
     </div>
     <div class="footer">
@@ -67,6 +65,6 @@
       </div>
     </div>
   </div>
-    <script src='점주로그인.js'></script>
+  <script src="productWriter.js"></script>
 </body>
 </html>

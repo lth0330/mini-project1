@@ -1,0 +1,227 @@
+/*---------------------------기본값 설정-----------------------------*/
+*{
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+li{
+  list-style-type : none;
+  font-size: 12px;
+}
+
+a{ 
+  text-decoration: none; 
+  color: black;
+  font-size: 12px;
+}
+
+.wrap{
+  position: relative;
+  width: 1280px;
+  margin-top: 50px;
+  margin: auto;
+}
+
+img{
+  width: 50px;
+}
+
+span{
+  padding: 0px 10px;
+  font-size: 12px;
+}
+/*--------------------------------헤더-----------------------------*/
+
+.header{
+  width: 1280px;
+  background-color: #F4F4F4;
+  padding: 10px 70px;
+  padding-top: 20px;
+  position: fixed;
+  top: 0px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.header1{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.title{
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+.header-left{
+  padding-left:30px;
+  padding-top: 5px;
+}
+
+
+.haeder-right{
+  padding-right: 30px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.haeder-right > button {
+  background-color: white;
+  border: 0px;
+  cursor: pointer
+}
+
+.hide::before{
+  display: block;
+  position: absolute;
+  background-position-x :-203px;
+  background-position-y :-301px;
+  background-size :468px 457px;
+  content:"";
+  background-image: url("./icon.png");
+  top: -13px;
+  width: 23px;
+  height: 13px;
+  box-shadow: 0;
+}
+.hide{
+  display: none;
+  width: 160px;
+  position: absolute;
+  background-color: white;
+  padding : 25px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 20px;
+}
+.hide-none{
+  display: block;
+}
+.hide > a > li{
+  font-size: 20px;
+  padding: 5px 0px;
+}
+
+/*---------------------------------메인-----------------------------*/
+.main{
+ background-color: #F4F4F4;
+ height: 100vh;             
+ border: 1px solid gray;
+ border-top: 0px;
+ margin-top: 81px;
+ width: 1280px;
+ padding-bottom: 70px;
+}
+
+.main-top{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+
+.main-top-left > div > img{
+  width: 30px;
+  padding: 17px 0px;
+  padding-left: 10px;
+  
+}
+
+.main-top-left > div{
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+}
+
+
+.main-top-left > div > div>input{
+  font-size: 20px;
+  width: 180px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0px;
+}
+
+.main-top-right{
+  display: flex;
+  padding-right: 50px;
+  margin-left: 50px;
+  border-radius: 20px;
+  background-color: white;
+  align-items: center;
+}
+
+.search{
+  font-size: 20px;
+   padding: 10px;
+   border: 0px;
+   width: 500px;
+   text-align: center;
+}
+
+.main-top-right > div > select{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 0px;
+  text-align: center;
+}
+
+
+.Bth{
+  padding: 20px;
+  background-color: white;
+  border: 0px;
+  margin-left: 40px;
+  border-radius: 20px;
+  cursor: pointer
+}
+
+.bth-div{
+  margin: 0px auto;
+}
+.main-center{
+  width: 90%;
+  background-color: white;
+  margin: 20px auto;
+  height: 90%;           
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+th {
+  font-size: 20px;
+  padding: 10px 50px;
+}
+
+td{
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*---------------------------------푸터-----------------------------*/
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 12px;
+  padding-top: 130px;
+  height: 300px;
+}
+
+.footer-left > ul {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.footer-right > ul {
+  text-align: left;
+  padding-left: 50px;
+}
+

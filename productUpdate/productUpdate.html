@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<<< HEAD:점주로그인.html
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='점주로그인.css'>
-    
-========
+
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
  <link rel="stylesheet" href="productUpdate.css">
->>>>>>>> origin/이태형:productUpdate.html
+
 </head>
 <body>
     <div class="wrap">
@@ -22,33 +15,21 @@
       <div class="header1">
         <div class="header-left">
           <div>
-            <button class="back" onclick ="location.href=#"> ◀ </button>
-            <img src="./img/logo.png"/>
+            <div><a href="../productView/productView.html"> ◀ </a></div>
+            <img src="./logo.png"/>
           </div>
         </div>
         <div class="header-center">
           <h3 class="title"> 편의점 할인 정보 및 재고 관리</h3>
         </div>
         <div class="header-right">
-          <a href="#"><img src="./img/menu.png"></a>
+          <a href="#"><img src="./menu.png"/></a>
         </div>
       </div>
     </div>
     <div class="main">
       <div class="main-center">
-<<<<<<<< HEAD:점주로그인.html
-          <div class="box1">
-            <h3>점주 로그인</h3>
-            아이디<input class="idBox"><br />
-            비밀번호<input class="pwdBox"><br />
-            <button class="ListLogin">로그인</button>
-            <ul>
-                <li>아이디찾기 <span>|</span></li>
-                <li>비밀번호찾기<span>|</span></li>
-                <li><a href="#">점주회원가입</a></li>
-            </ul>
-          </div>
-========
+
          <div class="tab">
             <table>
               <thead>
@@ -56,21 +37,21 @@
                   <th>지점명</th><th>제품명</th><th>가격</th><th>재고</th><th>이벤트</th><th>할인기간</th>
                 </tr>
               </thead>
-              <tbody class="tbody">
+              <tbody class="update-tbody">
                 <tr>
-                  <td>emart24 만완구 성결대점</td><td>두쫀쿠</td><td>6,000</td><td>00개</td><td>1+1</td><td>2026-01-01 ~ 2026-02-01</td><td><button class="remove">삭제</button></td><td><button class="update">수정</button></td>
+                  <td>emart24 만안구 성결대점</td><td>두쫀쿠</td><td>6,000</td><td>00개</td><td>1+1</td><td>2026-01-01 ~ 2026-02-01</td><td><button class="remove" onclick="productDelete()">삭제</button></td><td><button class="update" onclick="productModify()">수정</button></td>
                 </tr>
                 <tr>
-                  <td>emart24 만완구 성결대점</td><td>두바이초촐릿</td><td>3,500</td><td>17개</td><td>1,000원 할인</td><td>2026-01-01 ~ 2026-02-01</td><td><button class="remove">삭제</button></td><td><button class="update">수정</button></td>
+                  <td>emart24 만안구 성결대점</td><td>두바이초촐릿</td><td>3,500</td><td>17개</td><td>1,000원 할인</td><td>2026-01-01 ~ 2026-02-01</td><td><button class="remove" onclick="productDelete()">삭제</button></td><td><button class="update" onclick="productModify()">수정</button></td>
                 </tr>            
                 <tr>
-                  <td>emart24 만완구 성결대점</td><td>홈런볼</td><td>1,500</td><td>35개</td><td>500원 할인</td><td>2026-01-01 ~ 2026-02-01</td><td><button class="remove">삭제</button></td><td><button class="update">수정</button></td>
+                  <td>emart24 만안구 성결대점</td><td>홈런볼</td><td>1,500</td><td>35개</td><td>500원 할인</td><td>2026-01-01 ~ 2026-02-01</td><td><button class="remove" onclick="productDelete()">삭제</button></td><td><button class="update" onclick="productModify()">수정</button></td>
                 </tr>          
               </tbody>
             </table>
          </div>
          
->>>>>>>> origin/이태형:productUpdate.html
+
       </div>
     </div>
     <div class="footer">
@@ -99,6 +80,6 @@
       </div>
     </div>
   </div>
-    <script src='점주로그인.js'></script>
+    <script src='productUpdate.js'></script>
 </body>
 </html>

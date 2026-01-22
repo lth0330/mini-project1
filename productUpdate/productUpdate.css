@@ -1,7 +1,7 @@
 /*---------------------------기본값 설정-----------------------------*/
 *{
   font-size: 16px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   
@@ -19,13 +19,11 @@ a{
 }
 
 .wrap{
+  position: relative;
   width: 1280px;
   margin-top: 50px;
   margin: auto;
-  position: relative;
-
 }
-
 
 img{
   width: 50px;
@@ -38,18 +36,22 @@ span{
 /*--------------------------------헤더-----------------------------*/
 
 .header{
+  width: 1280px;
   background-color: #F4F4F4;
-  padding: 10px 0px;
-  border: 1px solid black;
-  border-bottom: none;
+  padding: 10px 70px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  position: fixed;
   top: 0px;
-  width: 1277px;
+  
 }
 
 .header1{
   display: flex;
   justify-content: space-between;
   background-color: white;
+  border-radius: 20px;
+  
 }
 
 .title{
@@ -57,25 +59,37 @@ span{
   padding-top: 5px;
 }
 
-.header-left{
-  padding-left: 70px;
+.header-left > div{
+  display: flex;
 }
 
-.haeder-right{
-  padding-right: 70px;
+.header-left > div > div > a {
+  font-size: 40px;
+  padding: 0px 15px;
+}
+
+.header-right{
+  padding-right: 30px;
   padding-top: 5px;
 }
+
+.back {
+  font-size: 40px;
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 10px;
+  border: 0px;
+}
+
+
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
- height: 100vh;               /*높이 알아서*/
+ height: 100vh;               
  border: 1px solid black;
-}
-.box1 > h3{
-  text-align: center;
-  padding-top: 140px; padding-bottom: 80px;
-  font-size: 30px;
-
+ border-top: 0px;
+ margin-top: 80px;
+ width: 1280px;
 }
 
 .main-center{
@@ -84,21 +98,35 @@ span{
   margin: 20px auto;
   height: 90%;           
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  
+}
+th {
+  
+  font-size: 20px;
+  padding: 10px 50px;
+}
+
+td{
   text-align: center;
+  padding-top: 20px;
 }
-.ListIdBox, .ListPwdBox{
-  display: flex;
-  justify-content: center;
-  margin: 20px; 
+
+.remove{
+  color: red;
+  background-color: white;
+  border: 0px;
+  margin-left: 30px;
+  cursor: pointer
 }
-.box1 >button{
-  padding: 10px;
-}
-.box1 > ul{
-  display: flex;
-  justify-content: center;
-  padding: 70px;
- 
+
+.update{
+  color: blue;
+  background-color: white;
+  border: 0px;
+  margin-left: 20px;
+  cursor: pointer
 }
 /*---------------------------------푸터-----------------------------*/
 
@@ -107,10 +135,9 @@ span{
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-  border: 1px solid black;
-  width: 1257px;
+  padding-top: 130px;
+  height: 300px;
 }
-
 
 .footer-left > ul {
   text-align: right;
@@ -121,6 +148,5 @@ span{
 .footer-right > ul {
   text-align: left;
   padding-left: 50px;
-  
 }
 

@@ -1,7 +1,7 @@
 /*---------------------------기본값 설정-----------------------------*/
 *{
   font-size: 16px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0px;
   padding: 0px;
   
@@ -19,7 +19,6 @@ a{
 }
 
 .wrap{
-  position: relative;
   width: 1280px;
   margin-top: 50px;
   margin: auto;
@@ -34,23 +33,30 @@ span{
   font-size: 12px;
 }
 /*--------------------------------헤더-----------------------------*/
-
 .header{
-  width: 1280px;
   background-color: #F4F4F4;
   padding: 10px 0px;
   border: 1px solid black;
-  position: fixed;
-  top: 0px;
-  
+  border-bottom: none;
+  width:0 auto;
 }
 
 .header1{
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: center; /* 흰 박스 가로중앙 */
+  align-items: center;   
+
+}
+.headerWhite{ /*가로 흰 박스 내부 가운데 정렬*/
+  width: 1140px; height: 60px;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 100px;
   display: flex;
   justify-content: space-between;
-  background-color: white;
-  
 }
+
 
 .title{
   font-size: 30px;
@@ -58,69 +64,45 @@ span{
 }
 
 .header-left{
-  padding-left: 0px;
+  padding-left: 70px;
 }
 
-.header-left > div{
-  display: flex;
-}
-.haeder-right{
+.header-right{ /*상단 우측 메뉴탭 여백*/
   padding-right: 70px;
   padding-top: 5px;
 }
-.back {
-  font-size: 40px;
-  background-color: white;
-  padding-right: 30px;
-  padding-left: 10px;
- 
-  border: 0px;
-}
-
-
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
- height: 100vh;               /*높이 알아서*/
+ height: 1000px;             /*높이 알아서*/
  border: 1px solid black;
- margin-top: 81px;
- width: 1280px;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-center{
+.main-center{ /*흰 박스*/
   width: 90%;
   background-color: white;
-  margin: 20px auto;
+  margin: 50px auto;
   height: 90%;           
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  
+  padding-left: 50px;
 }
-th {
-  
+.box1 > div { /* id~ 편의점tel */
+  width: 500px;
+  display: grid;
+  grid-template-columns: 120px 250px auto;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.box1 > button{ 
   font-size: 20px;
-  padding: 10px 50px;
-}
+  padding: 10px; }
 
-td{
-  text-align: center;
-  padding-top: 20px;
-}
 
-.remove{
-  color: red;
-  background-color: white;
-  border: 0px;
-  padding-left: 30px;
-}
-
-.update{
-  color: blue;
-  background-color: white;
-  border: 0px;
-  padding-left: 20px;
-}
 /*---------------------------------푸터-----------------------------*/
 
 .footer{
@@ -128,14 +110,12 @@ td{
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-  padding-top: 180px;
-  height: 300px;
+  border: 1px solid black;
 }
 
 .footer-left > ul {
   text-align: right;
   padding-right: 50px;
-  
 }
 
 .footer-right > ul {
