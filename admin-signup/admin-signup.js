@@ -48,7 +48,7 @@ function Listreg(){
     // 중복 여부 확인
     let Listconfirm=false;
     for (let i=0; i<AdminInfo.length;i++){
-        if (AdminInfo[i].Listid==Listid){
+        if (AdminInfo[i].id==Listid){
             Listconfirm = true;
             break;
         }
@@ -61,7 +61,7 @@ function Listreg(){
     }
 
     // 고유 번호 생성
-    let ListadminNo=AdminInfo.length>=1? AdminInfo[AdminInfo.length-1].ListadminNo+1:1;
+    let ListadminNo = AdminInfo.length >= 1 ? AdminInfo[AdminInfo.length-1].adminNo+1 : 1;
     
     // 입력 받은 정보로 (new) 배열 만들기
     let obj={

@@ -29,9 +29,15 @@ function ListLogin(){
         if(memberlist.id==Listid&&memberlist.pw==Listpw){
 
             // 유저 객체
-            const loginInfo={id: memberlist.id, pw: memberlist.pw,
-            brNum: memberlist.brNum, convName: memberlist.convName,
-            location: memberlist.location, phone: memberlist.phone};
+            const loginInfo={
+                adminNo : memberlist.adminNo,
+                id: memberlist.id,
+                pw: memberlist.pw,
+                brNum: memberlist.brNum,
+                convName: memberlist.convName,
+                location: memberlist.location,
+                phone: memberlist.phone
+            };
 
             // sessionStorage에 로그인된 상태 저장 -> 수정 loginInfo객체 새로 선언(0122)
             sessionStorage.setItem("loginInfo", JSON.stringify(loginInfo));
