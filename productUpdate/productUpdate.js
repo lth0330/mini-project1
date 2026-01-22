@@ -67,6 +67,10 @@ function productModify(pNo) { //본인 제품만 보는 화면에서 수정버�
         }
     }
 } //수정함수
+function menu() {            //메뉴 클릭
+    let hide = document.querySelector(".hide");
+    hide.classList.toggle("hide-none")
+}
 
 // loginAdd(); //로그인 객체 생성
 // function loginAdd(){

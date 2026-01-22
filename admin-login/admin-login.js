@@ -51,3 +51,7 @@ function ListLogin(){
     }
     if(!Listsuccess){alert("로그인 실패");}
 }
+function menu() {            //메뉴 클릭
+    let hide = document.querySelector(".hide");
+    hide.classList.toggle("hide-none")
+}

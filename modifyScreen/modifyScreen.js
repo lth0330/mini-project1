@@ -51,4 +51,8 @@ function boardmodify(){ //수정화면 수정 함수 버튼 클릭시
         }
     }
 }
+function menu() {            //메뉴 클릭
+    let hide = document.querySelector(".hide");
+    hide.classList.toggle("hide-none")
+}
 //html, css만 넘겨받으면 끝! -> productWriter만 되면 바로 테스트 가능
