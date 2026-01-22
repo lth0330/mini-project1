@@ -1,8 +1,12 @@
 function Adminreg(){
 
     // 입력한 객체 가져오기
+    const AdminimgDom=document.querySelector(".Adminimg"); // 260122 수정
+    const Adminimg=AdminimgDom.value; // 260122 수정
     const AdminproductDom=document.querySelector(".Adminproduct");
-    const Adminproduct=AdminproductListDom.value;
+    const Adminproduct=AdminproductDom.value;
+    const AdmincategoryDom=document.querySelector(".Admincategory"); // 260122 수정
+    const Admincategory=AdmincategoryDom.value; // 260122 수정
     const AdmineventDom=document.querySelector(".Adminevent");
     const Adminevent=AdmineventDom.value;
     const AdminpriceDom=document.querySelector(".Adminprice");
@@ -36,9 +40,9 @@ function Adminreg(){
         stock : Adminstock,
         eventdate : Admindisday,
         pName : Adminproduct,
-        pType : "과자", //추가해야함 -> 카테고리 select(0122)
-        price : Adminprice,
-        disprice : Admindiscount,
+        pType : Admincategory, 
+        price : Adminprice, // 260122 수정
+        disprice : Admindiscount, 
         img : "https://plcaehold.co/100x100"//추가해야함 -> 이미지 넣는 곳(0122)
     };
     console.log(obj);
@@ -46,5 +50,5 @@ function Adminreg(){
 
     // (new) 배열 다시 localStorage에 저장
     localStorage.setItem("productList",JSON.stringify(productList));
-    location.href="../productView/productView.html" // 등록 누르면 productView페이지로 이동 (수정 0122)
+    location.href="/productView/productView.html" // 등록 누르면 productView페이지로 이동 (수정 0122)
 }

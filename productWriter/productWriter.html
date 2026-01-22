@@ -13,29 +13,35 @@
     <div class="header">
       <div class="header1">
         <div class="header-left">
-          <img src="./img/logo.png"/>
+          <img src="/productView/logo.png"/>
         </div>
         <div class="header-center">
           <h3 class="title"> 편의점 할인 정보 및 재고 관리</h3>
         </div>
         <div class="haeder-right">
-          <a href="#"><img src="./img/menu.png"></a>
+          <a href="#"><img src="/productView/menu.png"></a>
         </div>
       </div>
     </div>
     <div class="main">
       <div class="main-center">
-        <p> 제품명 </p> <input class="Adminproduct">
-        <p> 이벤트 종류 </p>
+        <input type="file" class="Adminimg"> <!-- 수정 -->
+        <div><p> 제품명 </p> <input class="Adminproduct"></div> <!-- 260122 수정 -->
+        <div><p> 카테고리 </p> <!-- 260122 수정 -->
+        <select class="Admincategory"> <!-- 260122 수정 -->
+          <option> 과자 </option> <!-- 260122 수정 -->
+          <option> 음료수 </option> <!-- 260122 수정 -->
+        </select></div> <!-- 260122 수정 -->
+        <div><p> 이벤트 종류 </p> <!-- 260122 수정 -->
         <select class="Adminevent">
             <option> 1+1 </option>
             <option> 500원 할인 </option>
             <option> 1000원 할인 </option>
-        </select>
-        <p> 가격 </p> <input class="Adminprice">
-        <p> 할인 후 가격 </p> <input class="Admindiscount">
-        <p> 재고 </p> <input class="Adminstock">
-        <p> 할인 기간 </p> <input class="Admindisday">
+        </select></div>
+        <div><p> 가격 </p> <input class="Adminprice"></div>
+        <div><p> 할인 후 가격 </p> <input class="Admindiscount"></div>
+        <div><p> 재고 </p> <input class="Adminstock"></div>
+        <div><p> 할인 기간 </p> <input class="Admindisday"></div>
         <button onclick="Adminreg()"> 등록 </button>
       </div>
     </div>
