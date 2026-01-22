@@ -80,3 +80,7 @@ function Listreg(){
     localStorage.setItem("AdminInfo",JSON.stringify(AdminInfo));
     location.href="../admin-login/admin-login.html"; //수정: 폴더에 따른 로그인 페이지 이동(0122)
 }
+function menu() {            //메뉴 클릭
+    let hide = document.querySelector(".hide");
+    hide.classList.toggle("hide-none")
+}
