@@ -96,7 +96,7 @@ function productViewPrint() { //출력 함수
 
         html += `
                 <tr>
-                  <td>${locate}</td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 

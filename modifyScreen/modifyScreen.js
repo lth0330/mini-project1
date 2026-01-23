@@ -32,9 +32,11 @@ function boardmodify(){ //수정화면 수정 함수 버튼 클릭시
     const url = new URLSearchParams(location.search);
     const select_pNo = url.get('no'); //url 해당 제품 정보 받기
 
+    
     let productList = localStorage.getItem('productList');
     if( productList == null){ productList = []; }
     else{ productList = JSON.parse( productList ) }
+    
 
     for(let index = 0; index <= productList.length-1; index++ ){
         const product = productList[index];
@@ -51,6 +53,7 @@ function boardmodify(){ //수정화면 수정 함수 버튼 클릭시
             const image = imgDom.files[0];
 
             let imgUrl = "https://plcaehold.co/100x100";
+    }
 
             if(image){
                 imgUrl = URL.createObjectURL(image);
@@ -63,7 +66,11 @@ function boardmodify(){ //수정화면 수정 함수 버튼 클릭시
             location.href=`../productUpdate/productUpdate.html`; //update 화면으로 이동
         }
     }
-}
+
+        
+    
+
+
 function menu() {            //메뉴 클릭
     let hide = document.querySelector(".hide");
     hide.classList.toggle("hide-none")

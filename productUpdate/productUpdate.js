@@ -19,7 +19,7 @@ function productUpdatePrint() {
         if (loginInfo.adminNo == productList[index].adminNo) { //로그인한 AdminNo만 볼 수 있게
             html += `
                 <tr>
-                  <td>${loginInfo.convName}</td><td>${product.pName}</td>
+                  <td>${loginInfo.convName}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                   <td><button class="remove" onclick="productDelete(${product.pNo})">삭제</button></td>
