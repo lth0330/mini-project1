@@ -3,7 +3,7 @@ productViewPrint(); //1회 출력
 /*초반 객체 추가 함수 밑에 주석 처리를 한 번 풀고
  다시 하시면 됩니다. 다시 주석 처리 안하면 계속 로컬저장소에 추가되요!
 */
- Add();
+ //Add();
 function Add(){
     let productList = localStorage.getItem('productList');
     if (productList == null) { productList = []; }
@@ -141,7 +141,7 @@ function searchbtn() { //검색 버튼
                 console.log("카테고리 없고 검색어 있음");
                 html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -151,7 +151,7 @@ function searchbtn() { //검색 버튼
                     console.log("카테고리 있고 검색어 있음");
                     html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -162,7 +162,7 @@ function searchbtn() { //검색 버튼
                 console.log("카테고리 없고 검색어 없음");
                 html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -172,7 +172,7 @@ function searchbtn() { //검색 버튼
                     console.log("카테고리 있고 검색어 없음");
                     html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
