@@ -1,5 +1,4 @@
-
-function Adminreg(){
+async function Adminreg(){
 
     // 입력한 객체 가져오기
     const AdminimgDom=document.querySelector(".Adminimg"); // 260122 수정
@@ -19,13 +18,14 @@ function Adminreg(){
     const AdmindisdayDom=document.querySelector(".Admindisday");
     const Admindisday=AdmindisdayDom.value;
     
+    let imgUrl = "https://plcaehold.co/100x100";
+
     const image = AdminimgDom.files[0];
 
     if(image){
-        imgUrl = URL.createObjectURL(image);
+        imgUrl = await fileToDataURL(image);  // *페이지 전환시 저장 가능
+        //imgUrl = URL.createObjectURL(image);    // *페이지 전환시 저장 불가능 
     }
-
-    let imgUrl = "https://plcaehold.co/100x100";
 
     // localStorage에서 전체 제품 정보 가져오기
     let productList=localStorage.getItem("productList");
@@ -64,4 +64,14 @@ function Adminreg(){
 function menu() {            //메뉴 클릭
     let hide = document.querySelector(".hide");
     hide.classList.toggle("hide-none")
+}
+
+// 파일을 base64(dataURL)로 (바이트)변환
+function fileToDataURL(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);     
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
 }

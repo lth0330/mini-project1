@@ -1,4 +1,3 @@
-
 productViewPrint(); //1회 출력
 
 /*초반 객체 추가 함수 밑에 주석 처리를 한 번 풀고
@@ -96,7 +95,7 @@ function productViewPrint() { //출력 함수
 
         html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -197,59 +196,4 @@ function menu() {            //메뉴 클릭
     hide.classList.toggle("hide-none")
 }
 
-//loginAdd(); 로그인 객체 생성
-// function loginAdd(){
-//     let loginInfo = sessionStorage.getItem('loginInfo');
-//     if (loginInfo == null) { loginInfo = {}; }
-//     else { loginInfo = JSON.parse(loginInfo) } // 로그인 세션 객체 가져오기
 
-//     login = {
-//         adminNo : 1,
-//         id : "a01",
-//         pw : "123",
-//         brNum : "112233",
-//         convName : "명학역 GS25",
-//         location : "명학역",
-//         phone : "000-0000"
-//     }
-
-//     loginInfo = login;
-//     sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
-// }
-
-// productAdd();
-// function productAdd(){
-//     let productList = localStorage.getItem('productList');
-//     if (productList == null) { productList = []; }
-//     else { productList = JSON.parse(productList) } //제품 로컬 객체 가져오기
-
-//     let product1 = {
-//         pNo: 1,
-//         adminNo: 1,
-//         pName: "두바이음료",
-//         event: "1+1",
-//         eventdate: "2026-01-01~2026-02-01",
-//         price: 1500,
-//         disprice: 1500,
-//         stock: 17,
-//         pType: "음료수",
-//         img: "https://plcaehold.co/100x100"
-//     };
-
-//     let product2 = {
-//         pNo: 2,
-//         adminNo: 2,
-//         pName: "두바이음료",
-//         event: "1+1",
-//         eventdate: "2026-01-01~2026-02-01",
-//         price: 1500,
-//         disprice: 1500,
-//         stock: 17,
-//         pType: "음료수",
-//         img: "https://plcaehold.co/100x100"
-//     };
-
-//     productList.push(product1);
-//     productList.push(product2);
-//     localStorage.setItem('productList', JSON.stringify(productList));
-// }
