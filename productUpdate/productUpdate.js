@@ -19,7 +19,7 @@ function productUpdatePrint() {
         if (loginInfo.adminNo == productList[index].adminNo) {
             html += `
                 <tr>
-                  <td>${loginInfo.convName}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${loginInfo.convName}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                   <td><button class="remove" onclick="productDelete(${product.pNo})">삭제</button></td>
@@ -66,29 +66,10 @@ function productModify(pNo) { //본인 제품만 보는 화면에서 수정버�
             break;
         }
     }
-} //수정함수
+
+} 
+//수정함수
 function menu() {            //메뉴 클릭
     let hide = document.querySelector(".hide");
     hide.classList.toggle("hide-none")
 }
-
-// loginAdd(); //로그인 객체 생성
-// function loginAdd(){
-
-//     let loginInfo = sessionStorage.getItem('loginInfo');
-//     if (loginInfo == null) { loginInfo = {}; }
-//     else { loginInfo = JSON.parse(loginInfo) } // 로그인 세션 객체 가져오기
-
-//     login = {
-//         adminNo : 1,
-//         id : "a01",
-//         pw : "123",
-//         brNum : "112233",
-//         convName : "명학역 GS25",
-//         location : "명학역",
-//         phone : "000-0000"
-//     }
-
-//     loginInfo = login;
-//     sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
-// }
