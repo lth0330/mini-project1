@@ -23,12 +23,11 @@ function modifyPrint() {
             document.querySelector('.Adminimg').value = product.img;
         }
     }
-
 }
 
 
 
-function boardmodify() { //수정화면 수정 함수 버튼 클릭시
+async function boardmodify() { //수정화면 수정 함수 버튼 클릭시
     const url = new URLSearchParams(location.search);
     const select_pNo = url.get('no'); //url 해당 제품 정보 받기
 
@@ -50,9 +49,15 @@ function boardmodify() { //수정화면 수정 함수 버튼 클릭시
             product.price = document.querySelector('.Adminprice').value;
             product.disprice = document.querySelector('.Admindiscount').value;
             const imgDom = document.querySelector('.Adminimg');
-            const image = imgDom.files[0];
+            
 
             let imgUrl = "https://placehold.co/100x100";
+            const image = imgDom.files[0];
+
+            if(image){
+                imgUrl = await fileToDataURL(image);  // *페이지 전환시 저장 가능
+                //imgUrl = URL.createObjectURL(image);    // *페이지 전환시 저장 불가능 
+            }
 
 
             if (image) {
@@ -67,9 +72,14 @@ function boardmodify() { //수정화면 수정 함수 버튼 클릭시
         }
     }
 }
-
-
-
+function fileToDataURL(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);     
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
 
 
 function menu() {            //메뉴 클릭
