@@ -138,54 +138,47 @@ function searchbtn() { //검색 버튼
         }
 
         if (searchWord.value != "") { //검색어가 있을 때
-            if (category.value == "" && searchWord.value == product.pName) { //카테고리가 없을 때 검색어와 일치하면
+            if (category.value == "" && searchWord.value == product.pName) {
                 console.log("카테고리 없고 검색어 있음");
                 html += `
                 <tr>
-                  <td>${locate}</td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
-            `;
-            }
-            else { //카테고리가 있을 때
-                if (category.value == product.pType && searchWord.value == product.pName) { // 카테고리와 검색어가 일치하는 것만 출력
+            `; }
+            else {
+                if (category.value == product.pType && searchWord.value == product.pName) {
                     console.log("카테고리 있고 검색어 있음");
                     html += `
                 <tr>
-                  <td>${locate}</td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
             `; //추후에 추가
-                } else {
-                    continue; //카테고리가 있는데 일치 안하면 다음으로; }
-                }
-            }
+                } else { continue; } }
         } else { //검색어가 없을 때
-            if (category.value == "") { //카테고리가 없을 때
+            if (category.value == "") {
                 console.log("카테고리 없고 검색어 없음");
                 html += `
                 <tr>
-                  <td>${locate}</td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${product.price}</td><td>${product.stock}</td>
+                  <td>${product.event}</td><td>${product.eventdate}</td>
+                </tr> 
+            `; }
+            else {
+                if (category.value == product.pType) {
+                    console.log("카테고리 있고 검색어 없음");
+                    html += `
+                <tr>
+                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
             `;
-            }
-            else { //카테고리가 있을 때
-                if (category.value == product.pType) { // 카테고리와 일치하는 것만 출력
-                    console.log("카테고리 있고 검색어 없음");
-                    html += `
-                <tr>
-                  <td>${locate}</td><td>${product.pName}</td>
-                  <td>${product.price}</td><td>${product.stock}</td>
-                  <td>${product.event}</td><td>${product.eventdate}</td>
-                </tr> 
-            `; //추후에 추가
-                } else {
-                    continue; //카테고리가 있는데 일치 안하면 다음으로; }
-                }
+                } else { continue; }
             }
         }
     }

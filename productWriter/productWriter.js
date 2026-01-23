@@ -21,11 +21,11 @@ function Adminreg(){
     
     const image = AdminimgDom.files[0];
 
+    let imgUrl = "https://placehold.co/100x100";
+
     if(image){
         imgUrl = URL.createObjectURL(image);
     }
-
-    let imgUrl = "https://placehold.co/100x100";
 
     // localStorage에서 전체 제품 정보 가져오기
     let productList=localStorage.getItem("productList");
