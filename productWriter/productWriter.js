@@ -25,7 +25,7 @@ function Adminreg(){
         imgUrl = URL.createObjectURL(image);
     }
 
-    let imgUrl = "https://plcaehold.co/100x100";
+    let imgUrl = "https://placehold.co/100x100";
 
     // localStorage에서 전체 제품 정보 가져오기
     let productList=localStorage.getItem("productList");

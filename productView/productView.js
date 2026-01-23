@@ -20,7 +20,7 @@ function Add(){
         pType : "과자", 
         price : 1500,
         disprice : 1500, 
-        img : "https://plcaehold.co/100x100"
+        img : "https://placehold.co/100x100"
     };
     let product2 ={
         pNo : 2,
@@ -32,7 +32,7 @@ function Add(){
         pType : "음료수", 
         price : 2500, 
         disprice : 2500, 
-        img : "https://plcaehold.co/100x100"
+        img : "https://placehold.co/100x100"
     };
     let product3 ={
         pNo : 3,
@@ -44,7 +44,7 @@ function Add(){
         pType : "과자", 
         price : 1500,
         disprice : 1000, 
-        img : "https://plcaehold.co/100x100"
+        img : "https://placehold.co/100x100"
     };
     productList.push(product1);
     productList.push(product2);
@@ -233,7 +233,7 @@ function menu() {            //메뉴 클릭
 //         disprice: 1500,
 //         stock: 17,
 //         pType: "음료수",
-//         img: "https://plcaehold.co/100x100"
+//         img: "https://placehold.co/100x100"
 //     };
 
 //     let product2 = {
@@ -246,7 +246,7 @@ function menu() {            //메뉴 클릭
 //         disprice: 1500,
 //         stock: 17,
 //         pType: "음료수",
-//         img: "https://plcaehold.co/100x100"
+//         img: "https://placehold.co/100x100"
 //     };
 
 //     productList.push(product1);

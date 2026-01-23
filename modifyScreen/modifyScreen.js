@@ -52,7 +52,7 @@ function boardmodify() { //수정화면 수정 함수 버튼 클릭시
             const imgDom = document.querySelector('.Adminimg');
             const image = imgDom.files[0];
 
-            let imgUrl = "https://plcaehold.co/100x100";
+            let imgUrl = "https://placehold.co/100x100";
 
 
             if (image) {
