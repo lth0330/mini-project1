@@ -38,14 +38,13 @@ span{
   background-color: #F4F4F4;
   padding: 0px;
   border-left: 1px solid black; border-right: 1px solid black;
-  /*0122 width 삭제*/
  
 }
 
 .header1{
   background-color: #F4F4F4;
   display: flex;
-  justify-content: center; /* 흰 박스 가로중앙 */
+  justify-content: center; 
   align-items: center; 
   padding-top: 25px;  
 
@@ -68,14 +67,14 @@ span{
   padding-left: 70px;
 }
 
-.header-right{ /*상단 우측 메뉴탭 여백*/
+.header-right{ 
   padding-right: 70px;
   padding-top: 5px;
 }
 /*---------------------------------메인-----------------------------*/
 .main{ 
  background-color: #F4F4F4;
- height: 600px;               /*높이 알아서*/
+ height: 100vh;  /*01.23.높이 수정*/  
  border-left: 1px solid black; 
  border-right: 1px solid black;
  padding-top: 25px;
@@ -87,27 +86,31 @@ span{
   font-size: 30px;
 }
 
- .main-center{ width: 90%;
+.main-center{ width: 90%;
   background-color: white;
   text-align: center;
   margin: 0px auto;
   height: 90%;           
   border-radius: 15px;
  }
-  
 
-.ListIdBox, .ListPwdBox{ /* 아이디 비밀번호 칸 */
+.ListIdBox > input, .ListPwdBox > input{ /* 이 코드 확인 */
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;     /* 0123 수정*/
+  border: 1px solid gray; /* 0123 수정*/
+  
+}
+.ListIdBox, .ListPwdBox{ /* 0123 이 코드 전체 생성*/
   display: grid;
   grid-template-columns: 120px 250px auto;
-  align-items: center;
-  gap: 10px;
-  margin-left: 330px;
-  margin-bottom: 30px;
+  gap: 20px;
 }
- .box1 >button{ /* 로그인버튼 */
+ .box1 >button{
   padding: 10px;
 }
-.box1 > ul{ /* 하단 찾기버튼*/
+.box1 > ul{ 
   display: flex;
   justify-content: center;
   padding: 70px;
@@ -117,9 +120,7 @@ span{
   display: flex;
   justify-content: center;
   padding: 20px;
-  font-size: 12px;
-  border: 1px solid black;
-  border-top: none;
+  font-size: 12px;/* 0123 보더 삭제*/
   width: 0 auto;
 }
 

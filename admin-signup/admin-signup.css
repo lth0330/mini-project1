@@ -79,7 +79,7 @@ span{
 /*---------------------------------메인-----------------------------*/
 .main{
  background-color: #F4F4F4;
- height: 600px;             /*높이 알아서*/
+ height: 100vh;  /*01.23.높이 수정*/          
  border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -92,10 +92,9 @@ span{
   margin: 50px auto;
   height: 90%;           
   border-radius: 15px;
-  display: flex; /* flex-column 삭제*/
+  display: flex; 
   justify-content: center;
-  align-items: center; /*0122 수정 - 가로가운데*/
-  /*0122 수정 - padding-left 제거*/
+  align-items: center; 
 }
 .box1 > div { /* id~ 편의점tel */
   width: 500px;
@@ -118,9 +117,8 @@ span{
   justify-content: center;
   padding: 20px;
   font-size: 12px;
-  border: 1px solid black;
-  border-top: none;
   width: 0 auto;
+  /* 01.23. border 전체 삭제 */
 }
 
 .footer-left > ul {
