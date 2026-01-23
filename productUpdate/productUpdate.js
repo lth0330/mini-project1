@@ -2,7 +2,7 @@
 productUpdatePrint();
 
 function productUpdatePrint() {
-    const updatearea = document.querySelector('.update-tbody'); //추후에 추가, HTML 넣을 장소 update-tbody로 바꾸기
+    const updatearea = document.querySelector('.update-tbody');
 
     let productList = localStorage.getItem('productList');
     if (productList == null) { productList = []; }
@@ -16,7 +16,7 @@ function productUpdatePrint() {
     let html = ``;
     for (let index = 0; index <= productList.length - 1; index++) {
         const product = productList[index];
-        if (loginInfo.adminNo == productList[index].adminNo) { //로그인한 AdminNo만 볼 수 있게
+        if (loginInfo.adminNo == productList[index].adminNo) {
             html += `
                 <tr>
                   <td>${loginInfo.convName}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
@@ -25,11 +25,11 @@ function productUpdatePrint() {
                   <td><button class="remove" onclick="productDelete(${product.pNo})">삭제</button></td>
                   <td><button class="update" onclick="productModify(${product.pNo})">수정</button></td>
                 </tr> 
-                `; //추후에 추가 pNo도 넣어줘야 함.
+                `;
         }
     }
-    updatearea.innerHTML = html; // update페이지에 추가
-} //출력 함수
+    updatearea.innerHTML = html;
+}
 
 function productDelete(pNo) { //본인 제품만 보는 화면에서 삭제버튼 누를 시
 

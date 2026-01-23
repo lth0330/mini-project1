@@ -1,12 +1,11 @@
 async function Adminreg(){
 
     // 입력한 객체 가져오기
-    const AdminimgDom=document.querySelector(".Adminimg"); // 260122 수정
-    const Adminimg=AdminimgDom.value; // 260122 수정
+    const AdminimgDom=document.querySelector(".Adminimg");
     const AdminproductDom=document.querySelector(".Adminproduct");
     const Adminproduct=AdminproductDom.value;
-    const AdmincategoryDom=document.querySelector(".Admincategory"); // 260122 수정
-    const Admincategory=AdmincategoryDom.value; // 260122 수정
+    const AdmincategoryDom=document.querySelector(".Admincategory");
+    const Admincategory=AdmincategoryDom.value;
     const AdmineventDom=document.querySelector(".Adminevent");
     const Adminevent=AdmineventDom.value;
     const AdminpriceDom=document.querySelector(".Adminprice");
@@ -17,9 +16,9 @@ async function Adminreg(){
     const Adminstock=AdminstockDom.value;
     const AdmindisdayDom=document.querySelector(".Admindisday");
     const Admindisday=AdmindisdayDom.value;
-    
-    let imgUrl = "https://plcaehold.co/100x100";
 
+
+    let imgUrl = "https://placehold.co/100x100";
     const image = AdminimgDom.files[0];
 
     if(image){
@@ -40,7 +39,6 @@ async function Adminreg(){
     // 고유 번호 생성
     let pNo=productList.length >= 1 ? productList[productList.length-1].pNo+1:1;
     
-    // 입력 받은 정보로 (new) 배열 만들기 -> 수정된 객체에 맞춰서(0122)
     let obj={
         pNo : pNo,
         adminNo : loginInfo.adminNo,
@@ -49,7 +47,7 @@ async function Adminreg(){
         eventdate : Admindisday,
         pName : Adminproduct,
         pType : Admincategory, 
-        price : Adminprice, // 260122 수정
+        price : Adminprice,
         disprice : Admindiscount, 
         img : imgUrl
     };
@@ -58,7 +56,7 @@ async function Adminreg(){
 
     // (new) 배열 다시 localStorage에 저장
     localStorage.setItem("productList",JSON.stringify(productList));
-    location.href="/productView/productView.html" // 등록 누르면 productView페이지로 이동 (수정 0122)
+    location.href="/productView/productView.html"
 }
 
 function menu() {            //메뉴 클릭

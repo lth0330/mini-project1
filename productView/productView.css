@@ -81,7 +81,7 @@ span{
   background-position-y :-301px;
   background-size :468px 457px;
   content:"";
-  background-image: url("./icon.png");
+  background-image: url("../공용img/icon.png");
   top: -13px;
   width: 23px;
   height: 13px;
