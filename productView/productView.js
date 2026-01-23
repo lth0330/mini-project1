@@ -1,6 +1,58 @@
 
 productViewPrint(); //1회 출력
 
+/*초반 객체 추가 함수 밑에 주석 처리를 한 번 풀고
+ 다시 하시면 됩니다. 다시 주석 처리 안하면 계속 로컬저장소에 추가되요!
+*/
+// Add();
+function Add(){
+    let productList = localStorage.getItem('productList');
+    if (productList == null) { productList = []; }
+    else { productList = JSON.parse(productList) } //제품 로컬 객체 가져오기
+
+    let product1 ={
+        pNo : 1,
+        adminNo : 1,
+        event : "1+1",
+        stock : 10,
+        eventdate : "2026-01-01~2026-02-01",
+        pName : "두쫀쿠",
+        pType : "과자", 
+        price : 1500,
+        disprice : 1500, 
+        img : "https://plcaehold.co/100x100"
+    };
+    let product2 ={
+        pNo : 2,
+        adminNo : 1,
+        event : "1+1",
+        stock : 10,
+        eventdate : "2026-01-01~2026-04-01",
+        pName : "이로하스",
+        pType : "음료수", 
+        price : 2500, 
+        disprice : 2500, 
+        img : "https://plcaehold.co/100x100"
+    };
+    let product3 ={
+        pNo : 3,
+        adminNo : 2,
+        event : "500원 할인",
+        stock : 10,
+        eventdate : "2026-01-21~2026-03-21",
+        pName : "허니버터칩",
+        pType : "과자", 
+        price : 1500,
+        disprice : 1000, 
+        img : "https://plcaehold.co/100x100"
+    };
+    productList.push(product1);
+    productList.push(product2);
+    productList.push(product3);
+
+    localStorage.setItem('productList', JSON.stringify(productList));
+}
+
 function productViewPrint() { //출력 함수
     const productArea = document.querySelector('.view-tbody'); //추후에 추가, HTML 넣을 장소 가져오기
     const category = document.querySelector('.select');
@@ -44,7 +96,7 @@ function productViewPrint() { //출력 함수
 
         html += `
                 <tr>
-                  <td>${locate}</td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 

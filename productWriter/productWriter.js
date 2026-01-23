@@ -1,3 +1,4 @@
+
 function Adminreg(){
 
     // 입력한 객체 가져오기
@@ -58,4 +59,9 @@ function Adminreg(){
     // (new) 배열 다시 localStorage에 저장
     localStorage.setItem("productList",JSON.stringify(productList));
     location.href="/productView/productView.html" // 등록 누르면 productView페이지로 이동 (수정 0122)
+}
+
+function menu() {            //메뉴 클릭
+    let hide = document.querySelector(".hide");
+    hide.classList.toggle("hide-none")
 }
