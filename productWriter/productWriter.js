@@ -17,12 +17,10 @@ async function Adminreg(){
     const Adminstock=AdminstockDom.value;
     const AdmindisdayDom=document.querySelector(".Admindisday");
     const Admindisday=AdmindisdayDom.value;
-    
-    let imgUrl = "https://plcaehold.co/100x100";
 
-    const image = AdminimgDom.files[0];
 
     let imgUrl = "https://placehold.co/100x100";
+    const image = AdminimgDom.files[0];
 
     if(image){
         imgUrl = await fileToDataURL(image);  // *페이지 전환시 저장 가능
