@@ -69,10 +69,10 @@ span{
   position: relative;
 }
 
-.haeder-right > button {
+.haeder-right > button{
+  cursor: pointer;
   background-color: white;
   border: 0px;
-  cursor: pointer
 }
 .hide::before{
   display: block;
