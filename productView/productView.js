@@ -141,7 +141,7 @@ function searchbtn() { //검색 버튼
                 console.log("카테고리 없고 검색어 있음");
                 html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -151,7 +151,7 @@ function searchbtn() { //검색 버튼
                     console.log("카테고리 있고 검색어 있음");
                     html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -162,7 +162,7 @@ function searchbtn() { //검색 버튼
                 console.log("카테고리 없고 검색어 없음");
                 html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
@@ -172,7 +172,7 @@ function searchbtn() { //검색 버튼
                     console.log("카테고리 있고 검색어 없음");
                     html += `
                 <tr>
-                  <td>${locate}</td><td><img src=${product.img}/></td><td>${product.pName}</td>
+                  <td>${locate}</td><td><img src="${product.img}"/></td><td>${product.pName}</td>
                   <td>${product.price}</td><td>${product.stock}</td>
                   <td>${product.event}</td><td>${product.eventdate}</td>
                 </tr> 
