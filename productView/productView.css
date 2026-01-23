@@ -74,7 +74,6 @@ span{
   border: 0px;
   cursor: pointer
 }
-
 .hide::before{
   display: block;
   position: absolute;
@@ -98,9 +97,8 @@ span{
   box-shadow: 0px 0px 5px gray;
   border-radius: 20px;
 }
-.hide-none{
-  display: block;
-}
+.hide-none{ display: block;}
+
 .hide > a > li{
   font-size: 20px;
   padding: 5px 0px;
